@@ -17,8 +17,8 @@ main.erst {
   font-size: 1.5rem;
 }
 
-li::after,
-li::before {
+p::after,
+p::before {
   content: "";
   height: 1.6rem;
   aspect-ratio: 1;
