@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Erste Aufgabe */
+
+main.erst {
+  height: auto;
+  width: 60vw;
+  margin-inline: auto;
+}
+
+.erst > ul li p {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+p::after,
+p::before {
+  content: "";
+  height: 1.6rem;
+  aspect-ratio: 1;
+  background: center/ cover no-repeat
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/161359/quotes.png);
+  background-size: 1.5rem;
+  display: inline-block;
+}
+
+p::after {
+  transform: rotate(180deg);
+}
+
+/* zweite Aufgabe */
+
+.zweite {
+  width: 30vw;
+  padding: 5vw;
+  background-color: rgb(0 0 0 /0.5);
+  margin: 20px auto;
+  font-size: 2rem;
+  color: aliceblue;
+  line-height: 4rem;
+}
+
+.zweite > ul li::after {
+  content: "";
+  height: 60px;
+  aspect-ratio: 1;
+  display: inline-block;
+  transform: translate(10px, 15px);
+}
+
+.zweite > ul li:nth-child(1):after,
+.zweite > ul li:nth-child(4):after {
+  background: url(https://img.icons8.com/officel/64/000000/pdf.png);
+}
+
+.zweite > ul li:nth-child(2):after {
+  background: url(https://img.icons8.com/dusk/64/000000/ms-excel.png);
+}
+.zweite > ul li:nth-child(3):after {
+  background: url(https://img.icons8.com/dusk/64/000000/ms-word.png);
+}
+
+/* Dritte Aufgabe */
+
+.dritte {
+  width: 60vw;
+  padding: 1vw;
+  background-color: rgba(119, 118, 118, 0.633);
+  margin-inline: auto;
+}
+
+.dritte > div {
+  display: block;
+  background-color: aliceblue;
+}
+
+div::after,
+div::before {
+  content: "";
+  height: 10px;
+  width: 100%;
+  display: block;
+  background: linear-gradient(to left, aqua, lime);
+}
+
+div::before {
+  background: linear-gradient(to right, aqua, lime);
+}
