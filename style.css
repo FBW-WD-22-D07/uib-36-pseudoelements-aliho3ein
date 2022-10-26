@@ -31,6 +31,10 @@ p::before {
 p::after {
   transform: rotate(180deg);
 }
+a {
+  text-decoration: none;
+  color: antiquewhite;
+}
 
 /* zweite Aufgabe */
 
