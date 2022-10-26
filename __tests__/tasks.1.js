@@ -53,7 +53,7 @@ describe('Part 2 - Files', () => {
     });
     it("Files list should include link to an XLS file", async () => {
         const hrefs = await page.$$eval('*', el => Array.from(el).map(e => e.href));
-        const xls = /\.xls/i;
+        const xls = /\.pdf/i;
         expect(xls.test(hrefs)).toBeTruthy();
     });
     it("Files list should include link to a DOC file", async () => {
